@@ -1,0 +1,11 @@
+{
+  "name": "icp-storychain",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Destiny-01/ICP-storychain",
+  "author": "Destiny Aigbe <aigbedestinyic@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd frontend && yarn dev"
+  }
+}
