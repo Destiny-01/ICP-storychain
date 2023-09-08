@@ -3,19 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  h1 {
+    @apply md:text-5xl text-4xl;
+  }
+
+  button {
+    @apply border-[3px] border-black bg-transparent font-medium italic px-4 py-1 uppercase hover:bg-black hover:text-white transition-all;
+  }
+}
+
 body {
   font-family: "Kanit", sans-serif;
+  scroll-behavior: smooth;
 }
 
-button {
-  border: 3px solid black;
-  background-color: transparent;
-  font-weight: 500;
-  font-style: italic;
-  padding: 4px 16px;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: 48px;
+.hero {
+  background: #0a0219;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(33, 13, 73, 1) 50%,
+    rgba(10, 2, 25, 1) 100%
+  );
 }
