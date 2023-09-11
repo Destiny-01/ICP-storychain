@@ -22,7 +22,7 @@ body {
   scroll-behavior: smooth;
 }
 
-.hero {
+.bg-blue {
   background: #0a0219;
   background: radial-gradient(
     circle,

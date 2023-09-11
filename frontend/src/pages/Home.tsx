@@ -1,14 +1,24 @@
-import Navbar from "../components/Navbar";
+import { useEffect } from "react";
 import HeroImg from "../assets/banner.png";
 import Logo from "../assets/logo.png";
 import CheckCircleSolidIcon from "../assets/circle-check-solid.svg";
-import Footer from "../components/Footer";
 
 function Home() {
+  useEffect(() => {
+    const { hash } = window.location;
+
+    if (hash) {
+      const element = document.querySelector(hash);
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, []);
+
   return (
     <div>
-      <Navbar />
-      <div className="bg-[#0A0219] hero md:flex justify-between py-8 md:py-16 px-4 md:px-12 h-full md:max-h-screen">
+      <div className="bg-blue md:flex justify-between py-8 md:py-16 px-4 md:px-12 h-full md:max-h-screen">
         <div className="md:max-w-[50%] md:mt-8">
           <h1 className="text-white text-5xl md:text-7xl">
             Craft, mint, and shape NFT storytelling!
@@ -113,7 +123,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
