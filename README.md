@@ -4,7 +4,7 @@ Taleblox is a dapp on ICP where users may collaboratively create and illustrate 
 # Inspiration
 # Why Taleblox?
 
-Often times, many creative minds are better than one human mind at generating ideas, creating and illustrating stories for pitch decks,  and scripts for advertisement and fiction movies etc.
+Often times, many creative minds are better than one human mind with regards to generating ideas, creating and illustrating stories for pitches, advertisement and fiction movies etc.
 
 Taleblox is the first dapp on ICP blockchain that uses AI to connect authors across the world to one another and to their audience such  AI technology  also helps to streamline collaborative process of creating stories, suggesting plot twists, character developments, streamline image generation for artistic illustrations of stories and even providing grammar and spelling suggestions.
 
