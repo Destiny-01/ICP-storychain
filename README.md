@@ -1,6 +1,6 @@
 # 2023 ICP "Fully-On-Chain" Hackathon Project:
 
-Taleblox is a dapp on ICP where users may collaboratively create,  illustrate and own unique stories with AI assistance and NFT arts for startup pitches, advertisements, science fiction movies etc.
+Taleblox is a dapp on ICP where users may collaboratively create,  illustrate and unique stories with AI assistance and NFT arts for startup pitches, advertisements, science fiction movies etc.
 
 # Inspiration
 # Why Taleblox?
