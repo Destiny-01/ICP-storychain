@@ -4,7 +4,7 @@ Taleblox is a dapp on ICP where users may collaboratively create and illustrate 
 # Inspiration
 # Why Taleblox?
 
-Often times, many creative minds are better than one at generating ideas, creating and illustrating stories for pitch decks, scripts for advertisement and fiction movies etc.
+Often times, many creative minds are better than one human mind at generating ideas, creating and illustrating stories for pitch decks, scripts for advertisement and fiction movies etc.
 
 # Potential Impact?
 # Who needs Taleblox?
