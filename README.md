@@ -1,20 +1,46 @@
-What? Taleblox is a dapp on ICP  where users may collaboratively create and illustrate unique stories with AI assistance and NFT arts.
+# 2023 ICP Fully-On-Chain Hackathon Project:
 
-Why? 
-Often times, many creative minds are better than one at generating ideas and crafting stories. Taleblox is envisioned to spark  the imaginations  of children and adults globally through a rich collection of themes, characters, illustrations and a safe collaborative storytelling environment.
+Taleblox is a dapp on ICP  where users may collaboratively create and illustrate unique stories with AI assistance and NFT arts.
 
-Who?
+# Inspiration
+# Why Taleblox?
 
-Authors and readers be globally including children and adults.
+Often times, many creative minds are better than one at generating ideas, creating and illustrating stories. 
 
-How?
-sign up with internet identity
+# Impact?
+# Who needs Taleblox?
+
+# For Children: 
+Stories with artistic illustrations makes reading and learning much more fascinating for children under the age of 5 years.
+
+# For Organizations: 
+Compelling user persona stories could be done better with AI assistance and through collaboration between people for enhanced  promotion of products and services.
+
+# Reference:
+https://powerofstories.com/collaborative-storytelling-the-art-of-writing-together
+
+# Purpose?
+# What Taleblox does?
+
+Fosters creative expression and organization, of ideas, knowledge and experiences.
+
+Encourages readers to learn various narrative and descriptive styles.
+
+Sparks immersive imagination for better understanding of moods and emotions of story characters.
+
+## How should people access Taleblox?
+
+Sign up with internet identity from ICP blockchain  network.
 Create or continue story.
 Select AI model.
 Enter prompt
 Start creating your story and select AI image.
 Mint NFT
-Share story
-
-
-Reference: https://powerofstories.com/collaborative-storytelling-the-art-of-writing-together
+# How should people access Taleblox?
+Sign up with internet identity from ICP blockchain  network.
+Create or continue story.
+Select AI model.
+Enter prompt
+Start creating your story and select AI image.
+Mint NFT
+Share story.
