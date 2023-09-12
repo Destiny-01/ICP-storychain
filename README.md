@@ -1,4 +1,4 @@
-# 2023 ICP Fully-On-Chain Hackathon Project:
+# 2023 ICP "Fully-On-Chain" Hackathon Project:
 
 Taleblox is a dapp on ICP  where users may collaboratively create and illustrate unique stories with AI assistance and NFT arts.
 
@@ -14,7 +14,7 @@ Often times, many creative minds are better than one at generating ideas, creati
 Stories with artistic illustrations makes reading and learning much more fascinating for children under the age of 5 years.
 
 # Organizations: 
-Compelling user persona stories could be done better with AI assistance and through collaboration between people for enhanced  promotion of products and services.
+Craft compelling user persona stories and/or advertisement scripts for enhanced  promotion of products and services.
 
 # Reference:
 https://powerofstories.com/collaborative-storytelling-the-art-of-writing-together
@@ -28,9 +28,9 @@ Encourages readers to learn various narrative and descriptive styles.
 
 Sparks immersive imagination for better understanding of moods and emotions of story characters.
 
-## How should people access Taleblox?
+## How should people use Taleblox?
 
-Sign up with internet identity from ICP blockchain network.
+Sign up with Internet Identity (II)  from ICP blockchain network.
 
 Create or continue story.
 
