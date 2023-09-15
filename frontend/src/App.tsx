@@ -4,6 +4,7 @@ import Stories from "./pages/Stories";
 import Create from "./pages/Create";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { IdentityProvider } from "./context/AppContext";
 
 function App() {
   const router = createBrowserRouter([
@@ -24,9 +25,11 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      <RouterProvider router={router} />
-      <Footer />
+      <IdentityProvider>
+        <Navbar />
+        <RouterProvider router={router} />
+        <Footer />
+      </IdentityProvider>
     </div>
   );
 }
