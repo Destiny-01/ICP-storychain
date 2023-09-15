@@ -24,4 +24,8 @@ export const IILogin = async (): Promise<string> => {
   });
 };
 
+export const IILogout = async () => {
+  return await authClient.logout({ returnTo: "/" });
+};
+
 export default authClient;

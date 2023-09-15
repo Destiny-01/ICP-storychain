@@ -2,7 +2,7 @@ import Logo from "../assets/logo.png";
 import Menu from "../assets/hamburger.png";
 import { createRef } from "react";
 import { useIdentity } from "../context/AppContext";
-import { IILogin } from "../utils/auth";
+import { IILogin, IILogout } from "../utils/auth";
 import { trimAddress } from "../utils";
 
 function Navbar() {
@@ -14,6 +14,12 @@ function Navbar() {
       ref.current.style.display =
         ref.current.style.display === "block" ? "none" : "block";
     }
+  };
+
+  const handleLogout = () => {
+    IILogout().then(() => {
+      setIdentity("");
+    });
   };
 
   const handleConnect = () => {
@@ -46,7 +52,7 @@ function Navbar() {
           <img src={Menu} className="h-12" alt="menu" />
         </div>
         {identity ? (
-          <p>{trimAddress(identity)}</p>
+          <p onClick={handleLogout}>{trimAddress(identity)}</p>
         ) : (
           <button onClick={handleConnect} className="hidden md:block">
             Connect Wallet
@@ -68,7 +74,11 @@ function Navbar() {
         <li className="text-xl mb-2" onClick={handleClick}>
           <a href="/create">Create</a>
         </li>
-        <button onClick={handleConnect}>Connect Wallet</button>
+        {identity ? (
+          <p onClick={handleLogout}>{trimAddress(identity)}</p>
+        ) : (
+          <button onClick={handleConnect}>Connect Wallet</button>
+        )}
       </ul>
     </div>
   );
