@@ -1,7 +1,19 @@
 import { useEffect } from "react";
-import HeroImg from "../assets/banner.png";
-import Logo from "../assets/logo.png";
-import CheckCircleSolidIcon from "../assets/circle-check-solid.svg";
+import Art from "../assets/art.png";
+import Logo from "../assets/logo.svg";
+import Image1 from "../assets/heroAssets/image1.png";
+import Image2 from "../assets/heroAssets/image2.png";
+import Image3 from "../assets/heroAssets/image3.png";
+import Image4 from "../assets/heroAssets/image4.png";
+import Image5 from "../assets/heroAssets/image5.png";
+import Image6 from "../assets/heroAssets/image6.png";
+import Image7 from "../assets/heroAssets/image7.png";
+import Brush from "../assets/icons/brush.svg";
+import Clapping from "../assets/icons/clapping.svg";
+import Cursor from "../assets/icons/cursor.svg";
+import Images from "../assets/icons/image.svg";
+import Sparkle from "../assets/icons/sparkle.svg";
+import Faq from "../components/Faq";
 
 function Home() {
   useEffect(() => {
@@ -18,108 +30,267 @@ function Home() {
 
   return (
     <div>
-      <div className="bg-blue md:flex justify-between py-8 md:py-16 px-4 md:px-12 h-full md:max-h-screen">
-        <div className="md:max-w-[50%] md:mt-8">
-          <h1 className="text-white text-5xl md:text-7xl">
-            Craft, mint, and shape NFT storytelling!
+      <div className="py-8 md:py-16 h-full">
+        <div className="md:max-w-[75] mx-auto text-center md:mt-8">
+          <h1 className="text-5xl text-white pb-4 md:text-7xl">
+            Collaborative Storytelling
+            <br /> Powered by Your Imagination
           </h1>
-          <p className="text-white text-xl md:max-w-[80%] pt-8">
-            Experience the future of storytelling with NFTs on the Internet
-            Computer Protocol. Create unique narratives, engage your audience,
-            and redefine the way stories are crafted and valued. Join us in
-            crafting this story while earning
+          <p className="text-xl mx-auto md:max-w-[60%] pb-12">
+            Craft Stories Alongside Collective Minds that Transcend the
+            Ordinary, Unlocking Worlds of Creativity and Wonder for All to
+            Explore and Share.
           </p>
+          <button>Start Your Story</button>
         </div>
-        <div className="md:mx-4 md:mt-0 mt-8">
-          <img src={HeroImg} className="w-full rounded-lg" alt="hero-img" />
-        </div>
-      </div>
-      <div id="how-to" className="pt-16 px-4 text-center">
-        <h1>How It Works?</h1>
-        <div className="md:flex md:mx-auto mt-8 md:max-w-[70%] justify-between text-start">
-          <div>
-            <p className="flex gap-x-2 text-xl mb-8">
-              <img
-                src={CheckCircleSolidIcon}
-                className="h-4 mt-1.5"
-                alt="icon"
-              />{" "}
-              Access Our DApp through Internet Identity
-            </p>
-            <p className="flex gap-x-2 text-xl mb-8">
-              <img
-                src={CheckCircleSolidIcon}
-                className="h-4 mt-1.5"
-                alt="icon"
-              />
-              Enter your prompt
-            </p>
-            <p className="flex gap-x-2 text-xl mb-8">
-              <img
-                src={CheckCircleSolidIcon}
-                className="h-4 mt-1.5"
-                alt="icon"
-              />
-              Choose your AI model
-            </p>
-            <p className="flex gap-x-2 text-xl mb-8">
-              <img
-                src={CheckCircleSolidIcon}
-                className="h-4 mt-1.5"
-                alt="icon"
-              />
-              Mint Your NFT based image for the story
-            </p>
-            <p className="flex gap-x-2 text-xl mb-8">
-              <img
-                src={CheckCircleSolidIcon}
-                className="h-4 mt-1.5"
-                alt="icon"
-              />
-              Earn your reward and share your story
-            </p>
+        <div className="flex gap-4 mt-32 overflow-x-clip">
+          <div className="flex flex-col gap-4 -translate-y-20 min-w-fit">
+            <img
+              src={Image4}
+              className="rounded-lg object-contain w-full"
+              alt="image4"
+            />
+            <img
+              src={Image5}
+              className="rounded-lg object-contain w-full"
+              alt="image5"
+            />
           </div>
-          {/* This should be a gif demonstrating how it works */}
           <img
-            src={HeroImg}
-            className="md:h-[400px]  rounded-2xl"
-            alt="hero-img"
+            src={Image3}
+            className="rounded-lg object-contain w-full"
+            alt="image3"
           />
+          <img
+            src={Image1}
+            className="rounded-lg object-contain w-full"
+            alt="image1"
+          />
+          <img
+            src={Image2}
+            className="rounded-lg object-contain w-full"
+            alt="image2"
+          />
+          <div className="flex flex-col gap-4 min-w-fit -translate-y-16">
+            <img
+              src={Image6}
+              className="rounded-lg object-contain w-full"
+              alt="image6"
+            />
+            <img
+              src={Image7}
+              className="rounded-lg object-contain w-full"
+              alt="image7"
+            />
+          </div>
         </div>
-      </div>
-      <div id="about" className="pt-16 px-4">
-        <h1 className="text-center">What is TaleBlox All About?</h1>
-        <div className="md:flex mx-auto mt-8 md:max-w-[70%] justify-between items-center">
-          {/* This should be a gif demonstrating how it works */}
-          <img src={Logo} className="h-[200px] rounded-2xl" alt="hero-img" />
-          <div>
-            <p>
-              Welcome to the forefront of digital storytelling innovation! We
-              are a passionate team dedicated to unlocking the boundless
-              potential of storytelling through Non-Fungible Tokens (NFTs) on
-              the Internet Computer Protocol (ICP).
+        <div className="px-16 text-center mt-36 mx-auto">
+          <h1 className="pb-4">
+            The Complete Toolkit for
+            <br /> Imaginative Stories
+          </h1>
+          <p>
+            Our platform is designed to empower storytellers and creators like
+            you with a rich set of <br /> features that redefine collaborative
+            storytelling.
+          </p>
+          <div className="flex flex-wrap gap-y-24 mt-24 justify-center">
+            <div className="text-center max-w-[30%]">
+              <div className="toolkit-icon mx-auto">
+                <img src={Sparkle} className="h-6" alt="sparkle" />
+              </div>
+              <p className="text-xl mt-4 mb-1 text-white font-medium">
+                AI-Powered Suggestions
+              </p>
+              <p className="text-center max-w-[75%] mx-auto">
+                Get creative inspiration and suggestions from AI algorithms for
+                your storytelling.
+              </p>
+            </div>
+            <div className="text-center max-w-[30%]">
+              <div className="toolkit-icon mx-auto">
+                <img src={Clapping} className="h-6" alt="Clapping" />
+              </div>
+              <p className="text-xl mt-4 mb-1 text-white font-medium">
+                Collaborative Storytelling
+              </p>
+              <p className="text-center max-w-[75%] mx-auto">
+                Seamlessly collaborate with other users to co-create captivating
+                narratives.
+              </p>
+            </div>
+            <div className="text-center max-w-[30%]">
+              <div className="toolkit-icon mx-auto">
+                <img src={Brush} className="h-6" alt="Brush" />
+              </div>
+              <p className="text-xl mt-4 mb-1 text-white font-medium">
+                Artwork Generation
+              </p>
+              <p className="text-center max-w-[75%] mx-auto">
+                Use AI to generate stunning artwork and illustrations to
+                complement your stories.
+              </p>
+            </div>
+            <div className="text-center max-w-[30%]">
+              <div className="toolkit-icon mx-auto">
+                <img src={Images} className="h-6" alt="Images" />
+              </div>
+              <p className="text-xl mt-4 mb-1 text-white font-medium">
+                NFT Story Pages
+              </p>
+              <p className="text-center max-w-[75%] mx-auto">
+                Each story page becomes a unique NFT, allowing creators to
+                monetize their content.
+              </p>
+            </div>
+            <div className="text-center max-w-[30%]">
+              <div className="toolkit-icon mx-auto">
+                <img src={Cursor} className="h-6" alt="cursor" />
+              </div>
+              <p className="text-xl mt-4 mb-1 text-white font-medium">
+                Interactive Storytelling
+              </p>
+              <p className="text-center max-w-[75%] mx-auto">
+                Add interactive elements to your stories, making them engaging
+                and immersive for readers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="px-16 text-center mt-36 mx-auto">
+          <h1 className="pb-4">
+            Explore Our Range of
+            <br /> Visual Art Styles
+          </h1>
+          <p>
+            Immerse yourself in a world of artistic diversity as TaleBlox offers
+            a spectrum of <br /> visual styles to complement and elevate your
+            storytelling experience.
+          </p>
+          <div className="grid grid-cols-3 mt-24 gap-x-8 gap-y-4">
+            <div className="col-span-1">
+              <div className="bg-blue-200 h-[250px] mb-8 overflow-clip rounded-2xl relative">
+                <img src={Art} className="object-cover w-full" alt="img" />
+                <p className="absolute font-medium left-4 bottom-2">
+                  3D Anime Pastel Art
+                </p>
+              </div>
+              <div className="bg-green-200 h-[373px] overflow-clip rounded-2xl relative">
+                <img src={Image2} className="object-cover w-full" alt="img" />
+                <p className="absolute font-medium left-4 bottom-2">
+                  3D Anime Pastel Art
+                </p>
+              </div>
+            </div>
+            <div className="col-span-1 row-span-2 bg-red-200 h-[655px] overflow-clip rounded-2xl relative">
+              <img
+                src={Image2}
+                className="object-cover w-full h-full"
+                alt="img"
+              />
+              <p className="absolute font-medium left-4 bottom-2">
+                3D Anime Pastel Art
+              </p>
+            </div>
+            <div className="col-span-1">
+              <div className="bg-yellow-200 h-[373px] mb-8 overflow-clip rounded-2xl relative">
+                <img src={Image2} className="object-cover w-full" alt="img" />
+                <p className="absolute font-medium left-4 bottom-2">
+                  3D Anime Pastel Art
+                </p>
+              </div>
+              <div className="bg-purple-200 h-[250px] overflow-clip rounded-2xl relative">
+                <img src={Image2} className="object-cover w-full" alt="img" />
+                <p className="absolute font-medium left-4 bottom-2">
+                  3D Anime Pastel Art
+                </p>
+              </div>
+            </div>
+            <div className="col-span-2 bg-indigo-200 h-[373px] overflow-clip rounded-2xl relative">
+              <img src={Image2} className="object-cover w-full" alt="img" />
+              <p className="absolute font-medium left-4 bottom-2">
+                3D Anime Pastel Art
+              </p>
+            </div>
+            <div className="col-span-1 bg-indigo-200 h-[373px] overflow-clip rounded-2xl relative">
+              <img src={Image2} className="object-cover w-full" alt="img" />
+              <p className="absolute font-medium left-4 bottom-2">
+                3D Anime Pastel Art
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="px-16 text-center mt-36 mx-auto">
+          <h1 className="pb-4">
+            Crafting Tales Made
+            <br /> Easier than Ever
+          </h1>
+          <p>
+            We make the process of transforming your imagination into <br />
+            captivating stories seamless
+          </p>
+          <div className="mt-12 flex gap-12 flex-col max-w-[70%] mx-auto items-center justify-center">
+            <div className="steps flex items-center h-full justify-center ">
+              <div className="max-w-[60%] py-24">
+                <div className="toolkit-icon text-3xl px-3 py-1 text-white mx-auto font-medium">
+                  1
+                </div>
+                <p className="text-3xl my-3">Connect Your Wallet</p>
+                <p>
+                  Begin your creative journey by securely connecting your
+                  digital wallet to TaleBlox. This step is essential for
+                  unlocking the NFT features and monetizing your storytelling.
+                </p>
+              </div>
+            </div>
+            <div className="steps flex items-center h-full justify-center ">
+              <div className="max-w-[60%] py-24">
+                <div className="toolkit-icon text-3xl px-3 py-1 text-white mx-auto font-medium">
+                  2
+                </div>
+                <p className="text-3xl my-3">Enter Your Prompt</p>
+                <p>
+                  Create a new story prompt or continue an existing one. With
+                  the power of AI, your ideas come to life as the platform
+                  generates content to weave into your narrative.
+                </p>
+              </div>
+            </div>
+            <div className="steps flex items-center h-full justify-center ">
+              <div className="max-w-[60%] py-24">
+                <div className="toolkit-icon text-3xl px-3 py-1 text-white mx-auto font-medium">
+                  3
+                </div>
+                <p className="text-3xl my-3">Watch The Magic Happen</p>
+                <p>
+                  Sit back and watch the magic unfold. Collaborate with fellow
+                  storytellers, harness the capabilities of AI, and witness your
+                  tales transform into captivating narratives with stunning
+                  artwork.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="px-16 text-center mt-36 mx-auto">
+          <h1 className="pb-4">
+            Everything You Need to <br /> Know About Taleblox
+          </h1>
+          <p>
+            Explore our FAQ section to find answers to some common questions
+            about TaleBlox
+          </p>
+          <Faq />
+        </div>
+        <div className="max-w-[65%] mx-auto steps-inner">
+          <div className="py-32 steps grid-bg flex flex-col px-16 text-center mt-48 mb-24 mx-auto items-center h-full justify-center">
+            <img src={Logo} className="h-14 mx-auto" alt="logo" />
+            <p className="text-5xl mt-6">Ready to Craft Your Story?</p>
+            <p className="my-4">
+              Immerse Yourself in a World of Boundless Creativity and
+              Collaborative Storytelling.
             </p>
-            <p className="mt-4">
-              {" "}
-              Our mission is to empower creators, authors, and artists to craft,
-              mint, and share their narratives as unique digital assets. We
-              believe in a future where storytelling transcends traditional
-              boundaries, where immersive experiences captivate audiences, and
-              where creators are fairly rewarded for their craft.
-            </p>
-            <p className="mt-4">
-              {" "}
-              Join us on this exciting journey as we reshape the landscape of
-              storytelling. Explore, create, and be part of a community that's
-              redefining how stories are told, shared, and cherished in the
-              digital age. The future of storytelling is here, and it's yours to
-              shape with us.
-            </p>
-            <p className="mt-4">
-              {" "}
-              Discover the endless possibilities of NFT storytelling on ICP
-              today!
-            </p>
+            <button>Let's Begin</button>
           </div>
         </div>
       </div>

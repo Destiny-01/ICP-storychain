@@ -24,7 +24,7 @@ function App() {
   ]);
 
   return (
-    <div>
+    <div className="bg-[#0B011D] h-full">
       <IdentityProvider>
         <Navbar />
         <RouterProvider router={router} />

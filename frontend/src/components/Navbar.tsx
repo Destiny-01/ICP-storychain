@@ -1,4 +1,4 @@
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import Menu from "../assets/hamburger.png";
 import { createRef } from "react";
 import { useIdentity } from "../context/AppContext";
@@ -27,18 +27,19 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-white">
-      <div className="flex items-center md:pl-8 md:pr-16 px-4 py-2 justify-between uppercase">
-        <div className="flex gap-x-8 items-center">
-          <img src={Logo} className="h-16" alt="logo" />
-          <ul className="list-none md:flex items-center hidden gap-x-6 bg-white">
-            <li className="text-lg">
-              <a href="/#how-to" data-te-smooth-scroll-init>
-                How To
-              </a>
-            </li>
+    <div>
+      <div className="flex items-center px-24 py-8 justify-between text-white">
+        <div className="flex items-center gap-2">
+          <img src={Logo} className="h-8" alt="logo" />
+          <p className="text-2xl font-medium">Taleblox</p>
+        </div>
+        <div className="flex items-center gap-8">
+          <ul className="list-none md:flex items-center hidden gap-8">
             <li className="text-lg">
               <a href="/#about">About</a>
+            </li>
+            <li className="text-lg">
+              <a href="/#how-to">How It Works</a>
             </li>
             <li className="text-lg">
               <a href="/stories">Explore</a>
@@ -47,17 +48,18 @@ function Navbar() {
               <a href="/create">Create</a>
             </li>
           </ul>
+          {identity ? (
+            <p onClick={handleLogout}>{trimAddress(identity)}</p>
+          ) : (
+            <button onClick={handleConnect} className="hidden md:block">
+              Connect Wallet
+            </button>
+          )}
         </div>
+
         <div className="md:hidden block" onClick={handleClick}>
           <img src={Menu} className="h-12" alt="menu" />
         </div>
-        {identity ? (
-          <p onClick={handleLogout}>{trimAddress(identity)}</p>
-        ) : (
-          <button onClick={handleConnect} className="hidden md:block">
-            Connect Wallet
-          </button>
-        )}
       </div>
       <ul className="list-none hidden gap-x-6 pb-4 bg-white pl-8" ref={ref}>
         <li className="text-xl mb-2" onClick={handleClick}>
