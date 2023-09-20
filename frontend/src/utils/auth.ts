@@ -1,7 +1,12 @@
 import { AuthClient } from "@dfinity/auth-client";
 
-const authClient = await AuthClient.create();
+export const createAuthClient = async () => {
+  return await AuthClient.create();
+};
+
 export const IILogin = async (): Promise<string> => {
+  const authClient = await createAuthClient();
+
   return await new Promise((resolve, reject) => {
     const existingIdentity = authClient.getIdentity();
     if (
@@ -25,7 +30,6 @@ export const IILogin = async (): Promise<string> => {
 };
 
 export const IILogout = async () => {
+  const authClient = await createAuthClient();
   return await authClient.logout({ returnTo: "/" });
 };
-
-export default authClient;

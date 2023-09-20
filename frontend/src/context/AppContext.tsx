@@ -7,7 +7,7 @@ import React, {
   useEffect,
   useMemo,
 } from "react";
-import authClient from "../utils/auth";
+import { createAuthClient } from "../utils/auth";
 
 const defaultValue = {
   identity: "",
@@ -28,10 +28,17 @@ export const IdentityProvider = ({ children }: Props) => {
   const value = useMemo(() => ({ identity, setIdentity }), [identity]);
 
   useEffect(() => {
-    const existingIdentity = authClient.getIdentity().getPrincipal().toString();
-    if (existingIdentity && existingIdentity !== "2vxsx-fae") {
-      setIdentity(existingIdentity);
-    }
+    createAuthClient()
+      .then((authClient) => {
+        const existingIdentity = authClient
+          .getIdentity()
+          .getPrincipal()
+          .toString();
+        if (existingIdentity && existingIdentity !== "2vxsx-fae") {
+          setIdentity(existingIdentity);
+        }
+      })
+      .catch((err) => console.log(err));
   }, [identity]);
 
   return (
