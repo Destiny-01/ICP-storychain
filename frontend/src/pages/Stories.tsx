@@ -3,159 +3,75 @@ import Img from "../assets/img.jpg";
 function Stories() {
   const stories = [
     {
-      title: "A chance to Transform Urban Planning",
+      title: "Lost In Space",
       img: Img,
       category: "Analytics",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quam dolor voluptatibus? Ipsum praesentium rerum tempora in excepturi enim maiores.",
-      author: "Ratel Round",
-      createdAt: "Saturday 16th September, 2023",
+        "A story about an astronaut that got lost in space and how he found his way home",
+      imageStyle: "Anime",
+      imageModel: "Dreamshaper",
     },
     {
-      title: "A chance to Transform Urban Planning",
+      title: "Lost In Space",
       img: Img,
       category: "Analytics",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quam dolor voluptatibus? Ipsum praesentium rerum tempora in excepturi enim maiores.",
-      author: "Ratel Round",
-      createdAt: "Saturday 16th September, 2023",
+        "A story about an astronaut that got lost in space and how he found his way home",
+      imageStyle: "Anime",
+      imageModel: "Dreamshaper",
     },
     {
-      title: "A chance to Transform Urban Planning",
+      title: "Lost In Space",
       img: Img,
       category: "Analytics",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quam dolor voluptatibus? Ipsum praesentium rerum tempora in excepturi enim maiores.",
-      author: "Ratel Round",
-      createdAt: "Saturday 16th September, 2023",
+        "A story about an astronaut that got lost in space and how he found his way home",
+      imageStyle: "Anime",
+      imageModel: "Dreamshaper",
     },
     {
-      title: "A chance to Transform Urban Planning",
+      title: "Lost In Space",
       img: Img,
       category: "Analytics",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quam dolor voluptatibus? Ipsum praesentium rerum tempora in excepturi enim maiores.",
-      author: "Ratel Round",
-      createdAt: "Saturday 16th September, 2023",
+        "A story about an astronaut that got lost in space and how he found his way home",
+      imageStyle: "Anime",
+      imageModel: "Dreamshaper",
     },
     {
-      title: "A chance to Transform Urban Planning",
+      title: "Lost In Space",
       img: Img,
       category: "Analytics",
       description:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quam dolor voluptatibus? Ipsum praesentium rerum tempora in excepturi enim maiores.",
-      author: "Ratel Round",
-      createdAt: "Saturday 16th September, 2023",
+        "A story about an astronaut that got lost in space and how he found his way home",
+      imageStyle: "Anime",
+      imageModel: "Dreamshaper",
     },
   ];
   return (
-    <div className="bg-blue h-full">
-      <h1 className="text-white text-center pt-8">All Stories</h1>
-      <div className="h-full flex flex-wrap justify-center p-8 gap-8">
+    <div className="bg-blue p-24 pt-0">
+      <h1 className="text-white pb-1 text-3xl">Explore Stories</h1>
+      <p>See our collection of fan-made stories</p>
+      <div className="h-full flex flex-wrap stories justify-between mt-6 gap-8">
         {stories.map((story, i) => (
-          <div className="md:w-[30%] rounded-lg" key={i}>
-            <div className="h-56 overflow-hidden">
-              <img
-                src={story.img}
-                className="w-full rounded-md object-cover"
-                alt="img"
-              />
+          <div className="border p-8 border-white/40 rounded-2xl" key={i}>
+            <div className="w-44 h-64 overflow-hidden mx-auto">
+              <img src={story.img} className="w-full object-cover" alt="img" />
             </div>
-            <div className="bg-white p-4 rounded-b-lg">
-              <div className="bg-[#FEF0EC] px-3 w-fit rounded-2xl">
-                <p className="uppercase text-[#F9A07B]">{story.category}</p>
-              </div>
-              <h2 className="text-2xl my-3 font-semibold">{story.title}</h2>
+            <div className="text-center">
+              <h2 className="text-2xl my-3 text-white">{story.title}</h2>
               <p>{story.description}</p>
-              <div className="flex items-center mt-3">
-                <img src={Img} className="h-8 w-8 rounded-full" alt="img" />
-                <p className="font-semibold mr-4 ml-2">{story.author}</p>
-                <p className="text-sm">{story.createdAt}</p>
+              <div className="flex items-center justify-center mx-auto mt-3">
+                <p>{story.imageModel}</p>
+                <p className="mx-3">&#x2022;</p>
+                <p className="text-sm">{story.imageStyle}</p>
               </div>
+              <a href="/stories/1">
+                <button className="mt-4">Read Story</button>
+              </a>
             </div>
           </div>
         ))}
-        {/* <div className="w-[30%] rounded-lg">
-          <div className="h-56 overflow-hidden">
-            <img
-              src={Img}
-              className="w-full rounded-md object-cover"
-              alt="img"
-            />
-          </div>
-          <div className="bg-white p-4 rounded-b-lg">
-            <div className="bg-[#FEF0EC] px-3 w-fit rounded-2xl">
-              <p className="uppercase">Analytics</p>
-            </div>
-            <h2 className="text-2xl my-3 font-semibold">
-              A chance to Transform Urban Planning
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              enim doloribus expedita maiores ullam quibusdam voluptatibus
-              aliquid vitae nisi suscipit?
-            </p>
-            <div className="flex items-center mt-3">
-              <img src={Img} className="h-8 w-8 rounded-full" alt="img" />
-              <p className="font-semibold mr-4 ml-2">Ratel Round</p>
-              <p className="text-sm">Saturday 16th September, 2023</p>
-            </div>
-          </div>
-        </div>
-        <div className="w-[30%] rounded-lg">
-          <div className="h-56 overflow-hidden">
-            <img
-              src={Img}
-              className="w-full rounded-md object-cover"
-              alt="img"
-            />
-          </div>
-          <div className="bg-white p-4 rounded-b-lg">
-            <div className="bg-[#FEF0EC] px-3 w-fit rounded-2xl">
-              <p className="uppercase">Analytics</p>
-            </div>
-            <h2 className="text-2xl my-3 font-semibold">
-              A chance to Transform Urban Planning
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              enim doloribus expedita maiores ullam quibusdam voluptatibus
-              aliquid vitae nisi suscipit?
-            </p>
-            <div className="flex items-center mt-3">
-              <img src={Img} className="h-8 w-8 rounded-full" alt="img" />
-              <p className="font-semibold mr-4 ml-2">Ratel Round</p>
-              <p className="text-sm">Saturday 16th September, 2023</p>
-            </div>
-          </div>
-        </div>
-        <div className="w-[30%] rounded-lg">
-          <div className="h-56 overflow-hidden">
-            <img
-              src={Img}
-              className="w-full rounded-md object-cover"
-              alt="img"
-            />
-          </div>
-          <div className="bg-white p-4 rounded-b-lg">
-            <div className="bg-[#FEF0EC] px-3 w-fit rounded-2xl">
-              <p className="uppercase">Analytics</p>
-            </div>
-            <h2 className="text-2xl my-3 font-semibold">
-              A chance to Transform Urban Planning
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              enim doloribus expedita maiores ullam quibusdam voluptatibus
-              aliquid vitae nisi suscipit?
-            </p>
-            <div className="flex items-center mt-3">
-              <img src={Img} className="h-8 w-8 rounded-full" alt="img" />
-              <p className="font-semibold mr-4 ml-2">Ratel Round</p>
-              <p className="text-sm">Saturday 16th September, 2023</p>
-            </div>
-          </div> 
-        </div>*/}
       </div>
     </div>
   );

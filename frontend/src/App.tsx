@@ -5,6 +5,7 @@ import Create from "./pages/Create";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { IdentityProvider } from "./context/AppContext";
+import Story from "./pages/Story";
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,10 @@ function App() {
     {
       path: "stories",
       element: <Stories />,
+    },
+    {
+      path: "stories/:id",
+      element: <Story />,
     },
     {
       path: "create",

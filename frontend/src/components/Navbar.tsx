@@ -28,11 +28,13 @@ function Navbar() {
 
   return (
     <div>
-      <div className="flex items-center px-24 py-8 justify-between text-white">
-        <div className="flex items-center gap-2">
-          <img src={Logo} className="h-8" alt="logo" />
-          <p className="text-2xl font-medium">Taleblox</p>
-        </div>
+      <div className="flex items-center px-24 py-8 mb-8 justify-between text-white">
+        <a href="/">
+          <div className="flex items-center gap-2">
+            <img src={Logo} className="h-8" alt="logo" />
+            <p className="text-2xl font-medium">Taleblox</p>
+          </div>
+        </a>
         <div className="flex items-center gap-8">
           <ul className="list-none md:flex items-center hidden gap-8">
             <li className="text-lg">

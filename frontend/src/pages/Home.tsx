@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Art from "../assets/art.png";
+import Img from "../assets/img.jpg";
 import Logo from "../assets/logo.svg";
 import Image1 from "../assets/heroAssets/image1.png";
 import Image2 from "../assets/heroAssets/image2.png";
@@ -170,7 +170,7 @@ function Home() {
           <div className="grid grid-cols-3 mt-24 gap-x-8 gap-y-4">
             <div className="col-span-1">
               <div className="bg-blue-200 h-[250px] mb-8 overflow-clip rounded-2xl relative">
-                <img src={Art} className="object-cover w-full" alt="img" />
+                <img src={Img} className="object-cover w-full" alt="img" />
                 <p className="absolute font-medium left-4 bottom-2">
                   3D Anime Pastel Art
                 </p>
