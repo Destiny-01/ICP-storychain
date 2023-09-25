@@ -22,7 +22,7 @@ We bridges storytelling and art like never before. With AI-powered enhancements 
 
 # Architecture
 
-![https://github.com/K1297/TaleBlox](IMG-20230926-WA0009.jpg)
+![https://github.com/K1297/TaleBlox/IMG-20230926-WA0009.jpg](IMG-20230926-WA0009.jpg)
 
 ## Components 
 
